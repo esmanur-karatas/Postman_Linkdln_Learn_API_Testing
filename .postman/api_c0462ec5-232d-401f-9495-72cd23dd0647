@@ -9,8 +9,11 @@ id = c0462ec5-232d-401f-9495-72cd23dd0647
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"29142931-d3e894a3-edfe-4b73-bcd3-56984edd10b6","path":"Address API Copy.json","metaData":{}}
 files[] = {"id":"29142931-3d25bb17-ccd5-44ce-b584-1ff108cfe7ec","path":"Address API.json","metaData":{}}
+files[] = {"id":"29142931-013b86f5-30f2-4b43-9c89-b92e1c8ba09c","path":"Contact List(1).json","metaData":{}}
 files[] = {"id":"29142931-f30f477d-307b-4295-9a8c-9ac235a34ad1","path":"Contact List.json","metaData":{}}
+files[] = {"id":"29142931-6064c910-cd5a-463c-a128-7c17c32010d8","path":"Pet Owners(1).json","metaData":{}}
 files[] = {"id":"29142931-5478b40e-df9c-464f-b99e-f06db449bc96","path":"Pet Owners.json","metaData":{}}
 
 [config.relations.collections.metaData]
