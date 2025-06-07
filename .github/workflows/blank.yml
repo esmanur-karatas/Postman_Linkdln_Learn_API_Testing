@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
         run: |
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
       - name: Login to Postman CLI
-        run: postman login --with-api-key ${{ secrets.POSTMAN_15_DAYS_OF_KEY }}
+        run: postman login --with-api-key ${{ secrets.New API }}
       - name: Run API tests
         run: |
           postman collection run "${{ github.workspace }}/postman/collections/Day 02: Version control(1).json" -e "29142931-ae08936d-17cd-45ba-adb3-05411526f905"
