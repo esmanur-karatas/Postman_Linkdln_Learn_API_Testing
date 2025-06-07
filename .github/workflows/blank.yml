@@ -11,9 +11,9 @@ jobs:
         run: |
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
       - name: Login to Postman CLI
-        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+        run: postman login --with-api-key ${{ secrets.postman }}
       - name: Run API tests
         run: |
-          postman collection run "${{ github.workspace }}/postman/collections/Address API(1).json" --integration-id "178132-${{ github.run_id }}"
-          postman collection run "${{ github.workspace }}/postman/collections/Contact List(1).json" --integration-id "178132-${{ github.run_id }}"
-          postman collection run "${{ github.workspace }}/postman/collections/Pet Owners.json" --integration-id "178132-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/Address API.json" --integration-id "178134-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/Contact List.json" --integration-id "178134-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/Pet Owners.json" --integration-id "178134-${{ github.run_id }}"
